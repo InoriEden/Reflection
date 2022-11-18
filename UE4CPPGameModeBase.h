@@ -16,9 +16,12 @@ class UE4CPP_API AUE4CPPGameModeBase : public AGameModeBase
 	GENERATED_BODY()
 public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-		bool b;
+	bool b;
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-		TFieldPath<FInt64Property> sss;
+	TFieldPath<FInt64Property> sss;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	bool a;
 
 
 	
