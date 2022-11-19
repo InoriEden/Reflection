@@ -23,7 +23,7 @@ public:
 	bool a;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
-	bool e;
+	bool f;
 
 
 	
