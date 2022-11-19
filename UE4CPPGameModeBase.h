@@ -24,6 +24,9 @@ public:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly)
 	bool f;
+	
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	bool t;
 
 
 	
