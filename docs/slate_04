@@ -1,0 +1,5 @@
+This section covers displaying custom content. In UE, UI elements are generally displayed in the editor interface through SWidget. 
+Creating an SWidget is typically done using the SNew or SAssignNew macros. Let’s first examine these two macros.
+
+In FAssetEditorToolkit::InitAssetEditor, you can see:
+
