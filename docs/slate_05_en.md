@@ -13,14 +13,14 @@ Taking the UMG Editor (FWidgetBlueprintEditor) as an example, you can see it has
 <img width="1170" height="352" alt="image" src="https://github.com/user-attachments/assets/703b429e-3f68-4a7e-88aa-db5fc70addc5" />
 **2**Upon entering the initial FWidgetDesignerApplicationMode mode, you can see that its constructor generates its own page layout. Most importantly, TabFactories.RegisterFactory
 
-<img width="715" height="170" alt="image" src="https://github.com/user-attachments/assets/cbd6910e-fe09-4495-af57-36cdbaab9126" />
+<img width="1440" height="170" alt="image" src="https://github.com/user-attachments/assets/cbd6910e-fe09-4495-af57-36cdbaab9126" />
 TabFactories is an instance of the FWorkflowAllowedTabSet class, which internally contains a TMap (a UE container) storing FWorkflowTabFactory objects. 
 The RegisterFactory function is used to add tab factory instances into this map.
-<img width="500" height="83" alt="image" src="https://github.com/user-attachments/assets/11c0db48-71d1-4136-9fd2-f5471bd14894" />
+<img width="1440" height="83" alt="image" src="https://github.com/user-attachments/assets/11c0db48-71d1-4136-9fd2-f5471bd14894" />
 
 **3**The FWorkflowTabFactory is actually the parent class of the AnimationTabSummoner class we just discovered using the Widget Reflector. 
 Therefore, FWorkflowTabFactory essentially stores the UI elements that make up the page layout. The overall workflow is as follows:
-<img width="250" height="283" alt="image" src="https://github.com/user-attachments/assets/f576d6f8-0311-414e-b27d-1b977a0d1830" />
+<img width="1440" height="283" alt="image" src="https://github.com/user-attachments/assets/f576d6f8-0311-414e-b27d-1b977a0d1830" />
 
 **4**In the PushTabFactories function, the code iterates through the Factories stored in the FWorkflowAllowedTabSet. For each iterated FWorkflowTabFactory, it calls the RegisterTabSpawner function to register it. 
 The key step is FWorkflowTabFactory::OnSpawnTab -> SpawnTab() -> CreateTabBody().
