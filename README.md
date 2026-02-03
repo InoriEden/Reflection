@@ -1,11 +1,11 @@
-# Reflection
+# ReflectionAndSlate
 
 ## Related Technical Article
 
-### Unreal Engine Reflection System Analysis (Chinese)
+### Unreal Engine Slate System Analysis (Chinese)
 
 This repository is based on my in-depth study of Unreal Engine's
-reflection mechanism. The following article explains the internal
+Slate. The following article explains the internal
 implementation in detail.
 
 - Chinese (Original):
