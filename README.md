@@ -2,7 +2,7 @@
 
 ## Related Technical Article
 
-### Unreal Engine Slate System Analysis (Chinese)
+### Unreal Engine Slate System Analysis
 
 This repository is based on my in-depth study of Unreal Engine's
 Slate. The following article explains the internal
