@@ -8,3 +8,6 @@ to open the editor.
 
 The core logic of OpenEditorForAsset is implemented by invoking
 OpenAssetEditor through IAssetTypeActions.
+<img width="978" height="51" alt="image" src="https://github.com/user-attachments/assets/ef106b61-0eb3-4f2c-b747-fd67a1ba664d" />
+<img width="1042" height="56" alt="image" src="https://github.com/user-attachments/assets/35859136-cb08-4a2a-9022-6e9c7984f568" />
+
