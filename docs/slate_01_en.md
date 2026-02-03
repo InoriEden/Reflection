@@ -13,5 +13,5 @@ OpenAssetEditor through IAssetTypeActions.
 <img width="1485" height="405" alt="image" src="https://github.com/user-attachments/assets/d6defd6b-0f06-45cd-b532-d486339a9e25" />
 In the function GetAssetTypeActionsForClass, the IAssetTypeActions is obtained by traversing the AssetTypeActionsList array. Since the blueprint already has a default IAssetTypeActions for blueprints, to open a custom editor, a new IAssetTypeActions needs to be created, and its Supported class should be set to UBlueprint.
 <img width="1324" height="231" alt="image" src="https://github.com/user-attachments/assets/dcda210a-7573-4d01-b6e3-5631db4a3b8b" />
-                                          Custom IAssetTypeActions Header File
+_________________________________________________**Custom IAssetTypeActions Header File**_____________________________________________
 
