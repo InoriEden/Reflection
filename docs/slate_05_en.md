@@ -20,7 +20,7 @@ The RegisterFactory function is used to add tab factory instances into this map.
 
 **3**The FWorkflowTabFactory is actually the parent class of the AnimationTabSummoner class we just discovered using the Widget Reflector. 
 Therefore, FWorkflowTabFactory essentially stores the UI elements that make up the page layout. The overall workflow is as follows:
-<img width="1440" height="283" alt="image" src="https://github.com/user-attachments/assets/f576d6f8-0311-414e-b27d-1b977a0d1830" />
+<img width="250" height="283" alt="image" src="https://github.com/user-attachments/assets/f576d6f8-0311-414e-b27d-1b977a0d1830" />
 
 **4**In the PushTabFactories function, the code iterates through the Factories stored in the FWorkflowAllowedTabSet. For each iterated FWorkflowTabFactory, it calls the RegisterTabSpawner function to register it. 
 The key step is FWorkflowTabFactory::OnSpawnTab -> SpawnTab() -> CreateTabBody().
