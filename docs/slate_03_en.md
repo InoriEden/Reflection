@@ -58,6 +58,7 @@ Here, it recursively calls the RestoreArea_Helper function again, this time ente
 Many conditional checks are performed here, and since they are commented, no explanation is needed. The key focus is on the following section.
 
 <img width="875" height="447" alt="image" src="https://github.com/user-attachments/assets/09dc23b2-0be8-4942-884f-d9a95c904d07" />
+
 What is being traversed here is the Tabs array within the Stack. Referring back to the relationship diagram above, the SpawnTab function essentially performs the following steps:
 First, it checks if an FTabSpawnerEntry with this name has been registered via RegisterTabSpawner.
 If found, it then checks whether the CanSpawnTab delegate is bound—if so, it executes it. 
