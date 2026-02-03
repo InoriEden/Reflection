@@ -14,4 +14,15 @@ OpenAssetEditor through IAssetTypeActions.
 In the function GetAssetTypeActionsForClass, the IAssetTypeActions is obtained by traversing the AssetTypeActionsList array. Since the blueprint already has a default IAssetTypeActions for blueprints, to open a custom editor, a new IAssetTypeActions needs to be created, and its Supported class should be set to UBlueprint.
 <img width="1324" height="231" alt="image" src="https://github.com/user-attachments/assets/dcda210a-7573-4d01-b6e3-5631db4a3b8b" />
 _________________________________________________**Custom IAssetTypeActions Header File**_____________________________________________
+<img width="1415" height="433" alt="image" src="https://github.com/user-attachments/assets/eeb3d719-6a17-44a7-9f72-9ffffc602902" />
+After creation, it is also necessary to add your custom IAssetTypeActions to the AssetTypeActionsList array in the FAssetToolsModule to ensure it is properly registered and accessible.
+<img width="886" height="100" alt="image" src="https://github.com/user-attachments/assets/5ab8e654-3334-445b-9b6d-56d0f290ce2e" />
+After that, call OpenEditorForAsset().
+<img width="976" height="63" alt="image" src="https://github.com/user-attachments/assets/87b28363-875b-4c18-a299-457354f6b86c" />
+Finally, the crucial step is to create the custom editor. This requires defining a class that inherits from FAssetEditorToolkit, utilizing its InitAssetEditor method to generate a custom editor interface. The original blueprint IAssetTypeActions follows this same pattern.
+
+Within InitAssetEditor, the framework for constructing the editor is defined. This includes how the menu bar and toolbars are generated, how individual items are created and inserted into their appropriate positions, and also allows for extensive customization and modification of this custom editor.
+
+
+
 
