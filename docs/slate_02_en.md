@@ -16,6 +16,7 @@ an examination of the source code reveals that the entire content of the editor 
 **Generate a tutorial SWidget.**
 
 <img width="158" height="80" alt="image" src="https://github.com/user-attachments/assets/38536eea-a143-4778-baa5-a07ec4a1e531" />
+
 That's exactly what the image above shows, so the meaning of SetRightContent should be clear now. 
 The same logic applies to methods like SetBackgroundContent and similar ones.
 
